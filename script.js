@@ -53,6 +53,12 @@ function addEmployee(employee) {
 }
 
 function deleteRecord(event) {
+  //if its in editstate dont let user to delete
+  if (isEdit) {
+    alert("Need to update before deleting");
+    return;
+  }
+
   //removing the selected row from the table
   event.target.parentNode.parentNode.remove();
 
