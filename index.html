@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="left">
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="number" name="salary" required placeholder="Salary" />
+          <select name="role">
+            <option value="QA">QA</option>
+            <option value="SDE">SDE</option>
+            <option value="Designer">Designer</option>
+            <option value="Devloper">Devloper</option>
+          </select>
+          <input type="text" name="team" placeholder="team" required />
+          <input
+            type="text"
+            name="company"
+            placeholder="Company's Name"
+            required
+          />
+        </div>
+        <div class="botm">
+          <button type="submit" id="submit">Add Employee</button>
+        </div>
+      </form>
+      <div class="right">
+        <table class="table">
+          <thead>
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Role</th>
+            <th>Team</th>
+            <th>Company</th>
+            <th>Options</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="hiioi.js"></script> -->
+  </body>
+</html>
